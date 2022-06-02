@@ -19,7 +19,7 @@ postRouter.get('/', (req, res) => {
 // Create a new post in url-encoded section
 postRouter.post('/', (req, res) => {
     const new_post = new Posts(req.body);
-    
+
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
         res.status(400).send({ error: true, message: 'empty fields left!' });
     } else {
@@ -73,5 +73,6 @@ postRouter.delete('/:id', (req, res) => {
         }
     });
 });
+
 //export module
 module.exports = postRouter;
