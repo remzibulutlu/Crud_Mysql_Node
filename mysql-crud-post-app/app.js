@@ -47,7 +47,7 @@ Posts.update = function (id, posts, result) {
             console.log("error: ", err);
             result("", err);
         } else {
-            result("", res)
+            result("", res);
         }
     });
 };

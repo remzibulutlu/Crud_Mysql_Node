@@ -56,7 +56,7 @@ postRouter.put('/:id', (req, res) => {
                 res.send(err);
             }
             else {
-                res.json({ message: 'Post updated!' });
+                res.json({ message: 'Post updated!' })
             }
         });
     }
